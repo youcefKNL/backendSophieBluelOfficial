@@ -22,9 +22,6 @@ const userRoutes = require("./routes/user.routes");
 const categoriesRoutes = require("./routes/categories.routes");
 const worksRoutes = require("./routes/works.routes");
 db.sequelize.sync().then(() => console.log("db is ready"));
-app.get("/", (req, res) => {
-  res.send("Express on Vercel");
-});
 app.use("/api/users", userRoutes);
 app.use("/api/categories", categoriesRoutes);
 app.use("/api/works", worksRoutes);
