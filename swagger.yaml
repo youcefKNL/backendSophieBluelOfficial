@@ -4,8 +4,7 @@ info:
   description: API Backend for Architect Website
   version: 1.0.0
 servers:
-  # - url: http://localhost:5678/api/
-  -url: backend-sophie-bluel-official-1q069hy4z-youcefknl.vercel.app/api
+  - url: http://localhost:5678/api/
 paths:
   /users/login:
     post:
